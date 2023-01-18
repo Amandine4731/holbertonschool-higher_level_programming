@@ -5,9 +5,10 @@ def print_last_digit(number):
 
     if (number >= 0):
         print(last, end="")
+        return last
 
     else:
         print(lastneg * (-1), end="")
+        return lastneg * (-1)
 
-    return lastneg * (-1)
     print("")
