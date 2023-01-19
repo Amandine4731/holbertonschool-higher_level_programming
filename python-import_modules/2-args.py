@@ -4,6 +4,8 @@ if __name__ == "__main__":
     argc = len(sys.argv)
     if argc == 2:
         print("1 argument:")
+    elif argc == 1 or argc == 0:
+        print("0 arguments.")
     else:
         print("{} arguments:".format(argc - 1))
 
