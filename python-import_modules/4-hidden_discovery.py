@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 if __name__ == "__main__":
     import statistics
     import hidden_4 as a
