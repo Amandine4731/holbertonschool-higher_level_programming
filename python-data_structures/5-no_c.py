@@ -2,10 +2,7 @@
 def no_c(my_string):
     new_list = ""
     for i in my_string:
-        if i == 'C':
+        if i == 'C' or i == 'c':
             continue
-        elif i == 'c':
-            continue
-
-    new_list += i
+        new_list += i
     return new_list
