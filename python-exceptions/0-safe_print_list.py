@@ -15,6 +15,7 @@ def safe_print_list(my_list=[], x=0):
             print()
             return max(my_list)
         if x == 0:
+            print()
             return 0
     except:
         print("empty list")
