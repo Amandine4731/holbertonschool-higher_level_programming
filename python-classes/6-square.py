@@ -37,7 +37,7 @@ class Square:
         """ property to set it (position) """
         self.__position = value
 
-        if type(value) is not int:
+        if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
 
         if value < 0:
