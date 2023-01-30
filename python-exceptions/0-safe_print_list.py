@@ -1,5 +1,18 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
+    """
+    THE REAL CODE
+    try:
+        i = 0
+        while i != x:
+            print(f"{my_list[i]}", end='')
+            i += 1
+        print()
+        return i
+    except:
+        print()
+        return i
+    """
     try:
         i = 0
         if x in my_list:
