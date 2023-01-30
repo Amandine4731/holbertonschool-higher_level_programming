@@ -8,7 +8,7 @@ class Square:
     """ private class attribute """
     def __init__(self, size=0):
         """ private instance attribute """
-        self.__size = size ** 2
+        self.__size = size
 
         if type(size) is not int:
             raise TypeError("size must be an integer")
@@ -18,4 +18,4 @@ class Square:
 
     def area(self):
         """ return operation square """
-        return self.__size
+        return self.__size ** 2
