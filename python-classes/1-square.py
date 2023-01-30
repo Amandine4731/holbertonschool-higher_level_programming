@@ -6,8 +6,8 @@ Python program to create empty class (square)
 
 class Square:
     """ private class attribute """
-    __size = {} 
-    
+    __size = {}
+
     def __init__(self, __size):
         """ private instance attribute """
         self.__size = __size
