@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-# Python program to create empty class (square)
-# empty class
-  
+"""
+Python program to create empty class (square)
+"""
+
+
 class Square:
-    pass
-  
-# code running
-obj = Square()
+    """ class empty create """
+    {}
