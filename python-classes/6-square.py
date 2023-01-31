@@ -35,19 +35,13 @@ class Square:
     @position.setter
     def position(self, value):
         """ property to set it (position) """
+        if type(value) is not tuple or len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        elif type(value[0]) is not int or value[0] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        elif type(value[1]) is not int or len(value[1]) < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-
-        if len(value) == 0:
-            value = (0, 0)
-        elif len(value) == 1:
-            value = (value[0], 0)
-            raise TypeError("position must be a tuple of 2 positive integers")
-
-        elif len(value) == 2:
-            value = (value[0], value[1])
-
-        if value[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
         """ return operation square """
