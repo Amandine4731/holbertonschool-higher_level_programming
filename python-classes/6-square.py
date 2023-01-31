@@ -36,17 +36,18 @@ class Square:
     def position(self, value):
         """ property to set it (position) """
         self.__position = value
-        
+
         if len(value) == 0:
             value = (0, 0)
         elif len(value) == 1:
             value = (value[0], 0)
             raise TypeError("position must be a tuple of 2 positive integers")
+
         elif len(value) == 2:
             value = (value[0], value[1])
 
-            if value[1] < 0:
-                raise TypeError("position must be a tuple of 2 positive integers")
+        if value[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
         """ return operation square """
