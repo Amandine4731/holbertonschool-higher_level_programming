@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-def print_square(size):
+"""
+    function to print square
+"""
 
+
+def print_square(size):
+    """ function to print square """
     if type(size) is not int:
         raise TypeError("size must be an integer")
     else:
@@ -9,5 +14,8 @@ def print_square(size):
         else:
             for i in range(size):
                 for j in range(size):
-                    print('#', end='')
+                    if j != (size - 1):
+                        print('#', end='')
+                    else:
+                        print("#")
                 print()
