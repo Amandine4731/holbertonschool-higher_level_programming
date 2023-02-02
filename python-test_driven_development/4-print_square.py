@@ -18,4 +18,3 @@ def print_square(size):
                         print('#', end='')
                     else:
                         print("#")
-                print()
