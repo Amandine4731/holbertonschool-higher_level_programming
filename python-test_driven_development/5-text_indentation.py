@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""
+    function to divise a string
+"""
 
 
 def text_indentation(text):
+    """ function to divise a string """
     if type(text) is not str:
         raise TypeError("text must be a string")
     carspecial = False
