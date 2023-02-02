@@ -1,0 +1,20 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Phrase au pif. Je ne sais pas quoi écrire")
+Phrase au pif.
+<BLANKLINE>
+Je ne sais pas quoi écrire
+
+>>> text_indentation("Alors comme ça, tu n'as pas d'inspiration ? Domage")
+Alors comme ça, tu n'as pas d'inspiration ?
+<BLANKLINE>
+Domage
+
+>>> text_indentation("Mon âge : 20 ans")
+Mon âge :
+<BLANKLINE>
+20 ans
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
