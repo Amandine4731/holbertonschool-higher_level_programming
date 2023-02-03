@@ -63,10 +63,11 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        if size > 0:
-            return cls(size, size)
+        if size < 0:
+            del(size)
         else:
-            raise ValueError("width must be >= 0")
+            return cls(size, size)
+
 
     def perimeter(self):
         """ return operation perimeter """
