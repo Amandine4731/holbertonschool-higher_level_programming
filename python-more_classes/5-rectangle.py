@@ -48,4 +48,25 @@ class Rectangle:
         """ return operation perimeter """
         if self.__height == 0 or self.__width == 0:
             return 0
-        return (self.__height + self.__width) * 2 and "\nBye rectangle..."
+        return (self.__height + self.__width) * 2
+
+    def __str__(self):
+        """ Instance method to return an informal printable string """
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        else:
+            string = ""
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    string = string + "#"
+                if i < self.__height - 1:
+                    string = string + '\n'
+            return string
+
+    def __repr__(self):
+        return f"Rectangle({self.__width}, {self.__height})"
+
+    def __del__(self):
+        print("Bye rectangle...")
+        del(self.__width, self.__height)
+        return
