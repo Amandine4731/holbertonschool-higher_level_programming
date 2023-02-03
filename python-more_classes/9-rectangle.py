@@ -89,7 +89,4 @@ class Rectangle:
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
-        Rectangle.print_symbol
         print("Bye rectangle...")
-        del(self.__width, self.__height)
-        return
