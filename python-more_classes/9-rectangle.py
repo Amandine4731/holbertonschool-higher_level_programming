@@ -13,8 +13,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         Rectangle.number_of_instances += 1
         """ private instance attribute """
-        self.height = height
         self.width = width
+        self.height = height
         Rectangle.print_symbol
 
     @property
@@ -65,7 +65,6 @@ class Rectangle:
     def square(cls, size=0):
         if size > 0:
             return cls(size, size)
-
 
     def perimeter(self):
         """ return operation perimeter """
