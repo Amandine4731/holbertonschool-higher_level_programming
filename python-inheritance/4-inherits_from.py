@@ -5,7 +5,7 @@ Python program to return true if oject is an instance
 
 
 def inherits_from(obj, a_class):
-    """ true if oject is an instance or a class that inherited from """
+    """ True if the object is an instance of a class that inherited from class """
     if type(obj) is a_class:
         return False
     elif isinstance(obj, a_class):
