@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Python program to return true if oject is an instance
+Python program to return true or false
 """
 
 
