@@ -10,6 +10,6 @@ import json
 def load_from_json_file(filename):
     """ create an Object from a "JSON file" """
     with open(filename, 'r') as f:
-        f.read(filename)
+        stock = f.read()
     f.close()
-    return(json.loads(filename))
+    return (json.loads(stock))
