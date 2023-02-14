@@ -51,6 +51,15 @@ class Rectangle(Base):
         """ function area """
         return self.__width * self.height
 
+    def display(self):
+        """ print the rectangle "#" """
+        if self.__width == 0:
+            print()
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print('#', end='')
+            print()
+
     """ x """
     @property
     def x(self):
