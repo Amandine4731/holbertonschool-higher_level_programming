@@ -53,7 +53,7 @@ class Rectangle(Base):
 
     def display(self):
         """ print the rectangle "#" """
-        if self.__width == 0:
+        if self.__width == 0 or self.__height == 0:
             print()
         for i in range(self.__height):
             for j in range(self.__width):
@@ -89,3 +89,7 @@ class Rectangle(Base):
 
         if new_y < 0:
             raise ValueError("y must be >= 0")
+
+    def __str__(self):
+        """ return a sentence """
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
