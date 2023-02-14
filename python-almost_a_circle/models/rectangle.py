@@ -24,4 +24,4 @@ class Rectangle(Base):
     
     @width.setter
     def width(self, new_width):
-        self.width = new_width
+        self.__width = new_width
