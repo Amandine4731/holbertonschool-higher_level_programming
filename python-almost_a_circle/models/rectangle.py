@@ -99,7 +99,7 @@ class Rectangle(Base):
                 (self.id, self.x, self.y, self.width, self.height))
 
     def update(self, *args):
-        self.id = args[0]
+        """ travel in a tuple """
         for i in range(len(args)):
             if i >= 1:
                 self.width = args[1]
