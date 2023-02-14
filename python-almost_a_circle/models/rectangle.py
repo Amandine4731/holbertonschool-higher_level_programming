@@ -47,6 +47,10 @@ class Rectangle(Base):
         if new_height <= 0:
             raise ValueError("height must be > 0")
 
+    """ function area """
+    def area(self):
+        return self.__width * self.height
+
     """ x """
     @property
     def x(self):
