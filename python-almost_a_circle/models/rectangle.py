@@ -12,7 +12,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.__id = id
         self.width = width
         self.height = height
         self.x = x
@@ -55,7 +54,11 @@ class Rectangle(Base):
         """ print the rectangle "#" """
         if self.__width == 0 or self.__height == 0:
             print()
+        for pos in range(self.__y):
+             print(end="\n" if self.__y > 0 else "")
         for i in range(self.__height):
+            for pos in range(self.__x):
+                 print(end=" ")
             for j in range(self.__width):
                 print('#', end='')
             print()
