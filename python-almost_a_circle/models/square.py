@@ -33,13 +33,11 @@ class Square(Rectangle):
         if len(args) > 0:
             for i in range(len(args)):
                 if i >= 1:
-                    self.id = args[1]
+                    self.size = args[1]
                 if i >= 2:
-                    self.size = args[2]
+                    self.x = args[2]
                 if i >= 3:
-                    self.x = args[3]
-                if i > 3:
-                    self.y = args[4]
+                    self.y = args[3]
                 else:
                     self.id = args[0]
         else:
