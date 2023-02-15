@@ -18,3 +18,13 @@ class Square(Rectangle):
         """ return a sentence """
         return ("[Square] ({}) {}/{} - {}".format
                 (self.id, self.x, self.y, self.size))
+
+    @property
+    def y(self):
+        return self.size
+
+    @y.setter
+    def y(self, value):
+        self.size = value
+
+
