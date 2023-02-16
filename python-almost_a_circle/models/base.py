@@ -31,7 +31,7 @@ class Base:
         """ to write json string of list_objs to a file """
         filename = "{}.json".format(cls.__name__)
         my_dict = []
-        if list_objs is None and len(list_objs) <= 0:
+        if list_objs is None or not list_objs:
             return "[]"
         else:
             for key in list_objs:
