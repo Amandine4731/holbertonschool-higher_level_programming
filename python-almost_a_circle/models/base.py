@@ -36,5 +36,5 @@ class Base:
         else:
             for key in list_objs:
                 my_dict.append(key.to_dictionary()) # in the file rectangle.py
-        with open(filename, "w") as f:
-            f.write(cls.to_json_string(my_dict))
+            with open(filename, "w") as f:
+                f.write(cls.to_json_string(my_dict))
