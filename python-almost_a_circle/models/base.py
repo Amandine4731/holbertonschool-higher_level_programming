@@ -32,7 +32,7 @@ class Base:
         filename = "{}.json".format(cls.__name__)
         my_dict = []
         if list_objs is None or len(list_objs) <= 0:
-            return "[]"
+            my_dict = []
         else:
             for key in list_objs:
                 my_dict.append(key.to_dictionary()) # in the file rectangle.py
