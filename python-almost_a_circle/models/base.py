@@ -38,3 +38,8 @@ class Base:
                 my_dict.append(key.to_dictionary())  # in the file rectangle.py
         with open(filename, "w") as f:
             f.write(cls.to_json_string(my_dict))
+
+    def from_json_string(json_string):
+        """ to return the list of json """
+        jsonstr = json.dumps(json_string)
+        return jsonstr
