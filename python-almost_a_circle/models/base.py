@@ -41,5 +41,8 @@ class Base:
 
     def from_json_string(json_string):
         """ to return the list of json """
-        jsonstr = json.dumps(json_string)
-        return jsonstr
+        if not json_string or json_string is None:
+            jsonstr = json.dumps(json_string)
+            return jsonstr
+        else:
+            return json_string
