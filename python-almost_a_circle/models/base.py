@@ -39,10 +39,10 @@ class Base:
         with open(filename, "w") as f:
             f.write(cls.to_json_string(my_dict))
 
+    @staticmethod
     def from_json_string(json_string):
         """ to return the list of json """
-        if not json_string or json_string is None:
-            jsonstr = json.dumps(json_string)
-            return jsonstr
+        if json_string is not None and json_string == 0:
+            return []
         else:
-            return json_string
+            return json.loads(json_string)
