@@ -42,7 +42,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """ to return the list of json """
-        if json_string is not None and len(json_string) == 0:
+        if json_string is not None or len(json_string) == 0:
             return []
         else:
             return json.loads(json_string)
