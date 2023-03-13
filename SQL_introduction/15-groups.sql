@@ -6,4 +6,5 @@
 
 -- The list should be sorted by the number of records (descending)
 -- The database name will be passed as an argument to the mysql command
-SELECT COUNT(id) FROM second_table GROUP BY score;
+SELECT score, COUNT(*) AS "number" FROM second_table GROUP BY score
+ORDER BY score DESC;
