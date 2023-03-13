@@ -3,5 +3,5 @@
 -- Results should display the score and the name (in this order)
 -- Records should be listed by descending score
 -- The database name will be passed as an argument to the mysql command
-SELECT score, name FROM second_table WHERE name = @name
+SELECT score, name FROM second_table WHERE EXISTS
 ORDER BY score DESC;
