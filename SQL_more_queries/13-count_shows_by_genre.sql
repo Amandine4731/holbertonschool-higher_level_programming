@@ -12,5 +12,5 @@
 SELECT tv_genres.name, tv_show_genres.genre_id
 FROM tv_genres
 LEFT JOIN tv_show_genres ON tv_show_genres.genre_id = tv_genres.id
-GROUP BY tv_genres.name, tv_show_genres.show_id
+GROUP BY tv_genres.name, tv_show_genres.genre_id
 ORDER BY tv_show_genres.show_id DESC;
