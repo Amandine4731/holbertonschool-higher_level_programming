@@ -11,5 +11,5 @@
 -- The database name will be passed as an argument of the mysql command
 SELECT tv_genres.name, COUNT(tv_show_genres.show_id)
 FROM tv_genres
-LEFT JOIN tv_show_genres ON tv_show_genres.genre_id = tv_genre.id
+LEFT JOIN tv_show_genres ON tv_show_genres.genre_id = tv_genres.id
 ORDER BY tv_show_genres.show_id DESC;
