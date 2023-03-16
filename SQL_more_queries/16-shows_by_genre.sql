@@ -11,5 +11,4 @@ SELECT tv_shows.title, tv_genres.name
 FROM tv_show_genres
 RIGHT OUTER JOIN tv_shows ON tv_show_genres.show_id = tv_shows.id
 LEFT OUTER JOIN tv_genres ON tv_show_genres.genre_id = tv_genres.id
-GROUP BY tv_shows.title, tv_genres.name
 ORDER BY tv_shows.title;
