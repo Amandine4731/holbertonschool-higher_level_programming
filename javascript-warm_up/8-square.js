@@ -8,9 +8,9 @@ const y = argv[2];
 if (argv[2] >= 0 || argv[2] < 0) {
   for (let i = 0; i < x; i++) {
     for (let j = 0; j < y - 1; j++) {
-      process.stdout.write('x');
+      process.stdout.write('X');
     }
-    process.stdout.write('x');
+    process.stdout.write('X');
     console.log('');
   }
 } else if (argv[2] !== Number) {
