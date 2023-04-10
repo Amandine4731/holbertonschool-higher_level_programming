@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const args = process.argv;
+const args = process.argv;  // comment
 
 if (0 < args[2] > 0) {
   console.log(('My number: ' + Number(~~args[2])));
