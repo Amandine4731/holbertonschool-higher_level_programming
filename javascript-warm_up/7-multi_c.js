@@ -4,7 +4,7 @@ const argv = process.argv;
 
 const x = argv[2];
 
-if (argv[2] && argv[2] > 0) {
+if (argv[2]) {
   for (let i = 0; i < x; i++) {
     console.log('C is fun');
   }
