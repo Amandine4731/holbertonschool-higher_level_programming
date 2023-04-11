@@ -1,15 +1,14 @@
 #!/usr/bin/node
 
 class Rectangle {
-  #width = 0;
-  #height;
   constructor (w, h) {
-    if ((w > 0) && (h > 0) ) {
+    if ((w > 0) && (h > 0)) {
       this.width = w;
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     for (let j = 0; j < this.height; j++) {
       for (let i = 0; i < this.width; i++) {
         process.stdout.write('X');
@@ -19,4 +18,3 @@ class Rectangle {
   }
 }
 module.exports = Rectangle;
-  
