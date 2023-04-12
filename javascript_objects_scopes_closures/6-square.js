@@ -10,7 +10,7 @@ class Square extends Squareparent {
   charPrint (c) {
     for (let j = 0; j < this.height; j++) {
       for (let i = 0; i < this.width; i++) {
-        if (c === String) {
+        if (typeof (c) === 'string') {
           process.stdout.write(c);
         } else {
           process.stdout.write('X');
