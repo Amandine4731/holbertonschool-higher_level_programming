@@ -11,7 +11,7 @@ class Square extends Squareparent {
     for (let j = 0; j < this.height; j++) {
       for (let i = 0; i < this.width; i++) {
         if (c === 'C') {
-          process.stdout.write('C');
+          process.stdout.write(c);
         } else {
           process.stdout.write('X');
         }
