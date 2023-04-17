@@ -7,7 +7,5 @@ const data = argv[3];
 fs.writeFile(filename, data, 'UTF-8', (err) => {
   if (err) {
     console.log(err);
-  } else {
-    console.log(data);
   }
 });
