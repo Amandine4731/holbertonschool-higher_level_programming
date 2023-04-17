@@ -2,10 +2,10 @@
 
 const request = require('request');
 const argv = process.argv;
-const my_url = argv[2];
+const myUrl = argv[2];
 const opts = {
   method: 'GET',
-  url: my_url
+  url: myUrl
 };
 
 request(opts, (err, res, body) => {
