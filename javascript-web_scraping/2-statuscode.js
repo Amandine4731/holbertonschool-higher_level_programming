@@ -8,7 +8,7 @@ const opts = {
   url: myUrl
 };
 
-request(opts, (err, res, body) => {
+request(opts, (err, res) => {
   if (err) return console.log('Error: ', err);
 
   console.log('code: %d', res.statusCode);
