@@ -14,7 +14,7 @@ request(opts, (err, res, body) => {
     const parse = JSON.parse(body);
     let result = 0;
     let user = 1;
-    for (user; user < parse.length - 1; user++) {
+    for (user; user < parse.length; user++) {
       result = 0;
       for (const i of parse) {
         if (i.userId === user) {
