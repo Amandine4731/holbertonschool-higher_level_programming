@@ -1,10 +1,11 @@
 #!/usr/bin/node
 
 const request = require('request');
+const argv = process.argv;
 const urlId = 'api/people/18/';
 const opts = {
   method: 'GET',
-  url: 'https://swapi-api.hbtn.io/api/films/'
+  url: argv[2]
 };
 
 request(opts, (err, res, body) => {
